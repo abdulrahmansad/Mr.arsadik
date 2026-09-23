@@ -51,24 +51,24 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.08 });
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
 const glow = document.querySelector(".cursor-glow");
 window.addEventListener("pointermove", (event) => {
-  if (!glow) return;
+  if (!glow || window.matchMedia("(max-width: 699px)").matches) return;
   glow.style.left = event.clientX + "px";
   glow.style.top = event.clientY + "px";
 });
 
 document.querySelectorAll("[data-tilt]").forEach((card) => {
   card.addEventListener("pointermove", (event) => {
-    if (window.matchMedia("(max-width: 900px)").matches) return;
+    if (window.matchMedia("(max-width: 899px)").matches) return;
     const rect = card.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width - 0.5;
     const y = (event.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `perspective(900px) rotateX(${-y * 4}deg) rotateY(${x * 5}deg)`;
+    card.style.transform = `perspective(900px) rotateX(${-y * 3.5}deg) rotateY(${x * 4.5}deg)`;
   });
   card.addEventListener("pointerleave", () => {
     card.style.transform = "";
@@ -77,11 +77,11 @@ document.querySelectorAll("[data-tilt]").forEach((card) => {
 
 document.querySelectorAll(".magnetic").forEach((button) => {
   button.addEventListener("pointermove", (event) => {
-    if (window.matchMedia("(max-width: 900px)").matches) return;
+    if (window.matchMedia("(max-width: 899px)").matches) return;
     const rect = button.getBoundingClientRect();
     const x = event.clientX - (rect.left + rect.width / 2);
     const y = event.clientY - (rect.top + rect.height / 2);
-    button.style.transform = `translate(${x * 0.08}px,${y * 0.08}px)`;
+    button.style.transform = `translate(${x * 0.07}px,${y * 0.07}px)`;
   });
   button.addEventListener("pointerleave", () => {
     button.style.transform = "";
