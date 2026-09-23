@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0c0d" />
+  <meta name="description" content="Abdullah Sadik — entrepreneur, product builder and operator. Book a focused WhatsApp call." />
+  <title>Abdullah Sadik — Build. Operate. Move.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Abdullah Sadik home">ABDULLAH SADIK</a>
+    <div class="nav-tags" aria-label="About Abdullah">
+      <span>Builder</span><span>Entrepreneur</span><span>Operator</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">I BUILD THINGS THAT SHOULD EXIST.</p>
+        <h1>Ideas are cheap.<br><span>Execution is the personality.</span></h1>
+        <p class="lead">
+          I’m Abdullah Sadik — entrepreneur, product builder and operator.
+          I turn messy ideas into working systems: brands, automation,
+          internal tools and market intelligence.
+        </p>
+        <a class="button button-primary magnetic" href="#book">Book a call <span>↗</span></a>
+      </div>
+
+      <aside class="mode-card reveal" data-tilt>
+        <p class="kicker">CURRENT MODE</p>
+        <p class="mode-copy">Building systems,<br>brands & unfair<br>leverage.</p>
+        <p class="muted">Not interested in looking busy. Interested in making the thing work.</p>
+        <span class="status"><i></i> Available for focused calls</span>
+      </aside>
+    </section>
+
+    <section class="work shell">
+      <div class="section-head reveal">
+        <p class="eyebrow">SELECTED WORK / PROOF OF MOTION</p>
+        <h2>I like businesses with moving parts.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <span class="index">01</span>
+          <h3>MAMELAT</h3>
+          <p>Real estate & investment brand in Türkiye.</p>
+          <span class="chip">Brand / Web / Growth</span>
+        </article>
+        <article class="project-card reveal">
+          <span class="index">02</span>
+          <h3>VARREN</h3>
+          <p>Digital product & marketing studio built around execution.</p>
+          <span class="chip">Product / Design / Systems</span>
+        </article>
+        <article class="project-card reveal">
+          <span class="index">03</span>
+          <h3>MARKET ANALYZER</h3>
+          <p>Technical analysis, strategy lab and market intelligence in one system.</p>
+          <span class="chip">AI / Finance / Automation</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto shell reveal">
+      <p class="eyebrow">HOW I THINK</p>
+      <p class="manifesto-copy">
+        I’m not trying to be “busy.” I’m trying to build things that compound:
+        better systems, stronger brands, cleaner decisions and fewer stupid bottlenecks.
+      </p>
+    </section>
+
+    <section class="booking" id="book">
+      <div class="shell booking-grid">
+        <div class="booking-copy reveal">
+          <p class="eyebrow">BOOKING / WHATSAPP</p>
+          <h2>Let’s make the call worth having.</h2>
+          <p>
+            Choose the reason, date and time, then add the context I should know.
+            I’ll receive one clean WhatsApp message instead of six disconnected texts.
+          </p>
+          <div class="booking-meta">
+            <span>15–45 min</span>
+            <span>Business</span>
+            <span>Project</span>
+            <span>Collaboration</span>
+            <span>Advice</span>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm">
+          <label>
+            <span>What kind of call?</span>
+            <select id="callType" required>
+              <option value="">Choose one</option>
+              <option>Business / opportunity</option>
+              <option>Project discussion</option>
+              <option>Collaboration</option>
+              <option>Product / tech</option>
+              <option>Advice / feedback</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <div class="form-row">
+            <label>
+              <span>Date</span>
+              <input id="date" type="date" required />
+            </label>
+            <label>
+              <span>Time</span>
+              <input id="time" type="time" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Your name</span>
+            <input id="name" type="text" maxlength="80" placeholder="Who am I speaking with?" required />
+          </label>
+
+          <label>
+            <span>Context</span>
+            <textarea id="description" rows="5" maxlength="800" placeholder="What should I know before the call?" required></textarea>
+          </label>
+
+          <button class="button button-primary magnetic" type="submit">
+            Continue to WhatsApp <span>↗</span>
+          </button>
+          <p class="form-note">This does not auto-book a calendar slot. It prepares the appointment request for WhatsApp.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <strong>ABDULLAH SADIK</strong>
+    <span>Build useful things. Keep moving.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
