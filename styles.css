@@ -132,6 +132,29 @@ h1 span{color:#d9dbd2}
   letter-spacing:-.055em;color:#d8d9d3
 }
 .builder-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.mentorship{padding-block:0 88px}
+.mentor-card{
+  border:1px solid #30392a;background:linear-gradient(145deg,#151a12,#101214);
+  border-radius:24px;padding:22px;display:grid;gap:34px
+}
+.mentor-copy h2{
+  font-size:clamp(2.45rem,11vw,4.6rem);line-height:.96;letter-spacing:-.055em;
+  max-width:860px;margin-bottom:22px
+}
+.mentor-lead{
+  color:#b1b6ac;font-size:.96rem;line-height:1.7;max-width:780px
+}
+.mentor-bold{
+  color:#e7e9df;font-size:1.08rem;line-height:1.55;font-weight:650;
+  max-width:760px;margin:22px 0 28px
+}
+.mentor-points{display:grid;gap:10px}
+.mentor-points article{
+  border-top:1px solid #30362d;padding:18px 0 8px
+}
+.mentor-points span{font-size:.65rem;color:#869678}
+.mentor-points h3{font-size:1.15rem;margin:16px 0 8px;letter-spacing:-.03em}
+.mentor-points p{margin:0;color:#92998f;font-size:.83rem;line-height:1.55}
 .booking{background:#101214;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .booking-grid{display:grid;gap:36px;padding-block:74px}
 .booking-copy>p:not(.eyebrow){color:var(--muted);font-size:.96rem;line-height:1.65;max-width:520px}
@@ -185,6 +208,9 @@ textarea{resize:vertical;min-height:130px}
   .hero-actions{grid-template-columns:auto auto;justify-content:start}
   .roles-grid{grid-template-columns:repeat(2,1fr)}
   .venture-stack{grid-template-columns:repeat(2,1fr)}
+  .mentor-card{grid-template-columns:1.05fr .95fr;padding:34px;gap:50px}
+  .mentor-points{grid-template-columns:repeat(2,1fr);gap:18px}
+  .mentor-points article{padding-right:12px}
   .form-row{grid-template-columns:1fr 1fr}
   .booking-grid{grid-template-columns:.9fr 1.1fr;gap:54px;padding-block:96px}
   .footer{padding-bottom:42px;flex-direction:row;align-items:flex-end;justify-content:space-between}
@@ -192,7 +218,7 @@ textarea{resize:vertical;min-height:130px}
   .cursor-glow{display:block}
 }
 @media (min-width:1050px){
-  .roles-grid{grid-template-columns:repeat(4,1fr)}
+  .roles-grid{grid-template-columns:repeat(5,1fr)}
   .venture{min-height:330px}
 }
 @media (prefers-reduced-motion:reduce){
